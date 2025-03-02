@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta property="og:title" content="La Baya Amarilla" />
+		<meta property="og:type" content="website" />
+		<meta property="og:image" content="./assets/logo.png" />
+		<link rel="icon" type="image/png" href="./assets/logo.png" />
+		<link rel="apple-touch-icon" sizes="180x180" href="./assets/logo.png" />
+		<link rel="stylesheet" href="./style/style.css" />
+		<title>La Baya Amarilla</title>
+	</head>
+
+	<body>
+		<nav class="nav">
+			<div class="nav-icon-wrapper">
+				<img src="./assets/logo.png" class="nav-icon" />
+				<h1 class="nav-title">La Baya Amarilla</h1>
+			</div>
+			<button id="toggleBtn" class="toggle-btn">
+				<span class="bar"></span>
+				<span class="bar"></span>
+				<span class="bar"></span>
+			</button>
+			<ul class="nav-links">
+				<li>
+					<a href="#inicio" class="nav-link"><p>Inicio</p></a>
+				</li>
+				<li>
+					<a href="#noticias" class="nav-link"><p>Noticias</p></a>
+				</li>
+				<li>
+					<a href="#deportes" class="nav-link"><p>Deportes</p></a>
+				</li>
+				<li>
+					<a href="#entretenimiento" class="nav-link"><p>Entretenimiento</p></a>
+				</li>
+				<li>
+					<a href="#opinion" class="nav-link"><p>Opinión</p></a>
+				</li>
+			</ul>
+			<ul id="sideBar" class="sidebar">
+				<li>
+					<a href="#inicio" class="sidebar-link"><p>Inicio</p></a>
+				</li>
+				<li>
+					<a href="#noticias" class="sidebar-link"><p>Noticias</p></a>
+				</li>
+				<li>
+					<a href="#deportes" class="sidebar-link"><p>Deportes</p></a>
+				</li>
+				<li>
+					<a href="#entretenimiento" class="sidebar-link"
+						><p>Entretenimiento</p></a
+					>
+				</li>
+				<li>
+					<a href="#opinion" class="sidebar-link"><p>Opinión</p></a>
+				</li>
+			</ul>
+		</nav>
+
+		<div class="body-content">
+			<!-- Headline -->
+			<section class="headline" id="inicio">
+				<div class="headline-title">
+					<h1>¡Bayamo en llamas!</h1>
+					<p>Las noticias más sensacionalistas de la ciudad.</p>
+				</div>
+				<img
+					src="./assets/background.png"
+					class="headline-img"
+					alt="Noticia destacada"
+				/>
+			</section>
+
+			<!-- Últimas Noticias -->
+			<section class="section" id="noticias">
+				<div class="section-header">
+					<h1>Últimas Noticias</h1>
+					<p>
+						Entérate de los titulares más candentes que están revolucionando
+						Bayamo.
+					</p>
+				</div>
+				<div class="articles">
+					<div class="article">
+						<h3 class="article-title">
+							¡Increíble! Alcalde atrapado en situación comprometedora
+						</h3>
+						<p class="article-text">Detalles exclusivos que no creerás...</p>
+					</div>
+					<div class="article">
+						<h3 class="article-title">
+							Famosa cantante local involucrada en escándalo
+						</h3>
+						<p class="article-text">
+							Las fotos que están dando de qué hablar...
+						</p>
+					</div>
+					<div class="article">
+						<h3 class="article-title">
+							Misterioso avistamiento en el río Bayamo
+						</h3>
+						<p class="article-text">¿Criatura desconocida o broma elaborada?</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- Deportes -->
+			<section class="section" id="deportes">
+				<div class="section-header">
+					<h1>Deportes</h1>
+					<p>Lo último en acción deportiva local en Bayamo.</p>
+				</div>
+				<div class="articles">
+					<div class="article">
+						<h3 class="article-title">
+							Equipo local arrasa en torneo regional
+						</h3>
+						<p class="article-text">Un triunfo que nadie esperaba...</p>
+					</div>
+					<div class="article">
+						<h3 class="article-title">
+							Escándalo en el estadio: pelea entre hinchas
+						</h3>
+						<p class="article-text">Caos tras el partido del domingo.</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- Entretenimiento -->
+			<section class="section" id="entretenimiento">
+				<div class="section-header">
+					<h1>Entretenimiento</h1>
+					<p>Chismes y noticias de las estrellas de Bayamo.</p>
+				</div>
+				<div class="articles">
+					<div class="article">
+						<h3 class="article-title">Actor local en nuevo romance secreto</h3>
+						<p class="article-text">¿Quién es su misteriosa pareja?</p>
+					</div>
+					<div class="article">
+						<h3 class="article-title">Concierto termina en caos total</h3>
+						<p class="article-text">Los fans enloquecieron en el escenario.</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- Opinión -->
+			<section class="section" id="opinion">
+				<div class="section-header">
+					<h1>Opinión</h1>
+					<p>Voces locales que dan de qué hablar.</p>
+				</div>
+				<div class="articles">
+					<div class="article">
+						<h3 class="article-title">¿Bayamo está perdiendo su esencia?</h3>
+						<p class="article-text">Un residente opina sobre los cambios.</p>
+					</div>
+					<div class="article">
+						<h3 class="article-title">El turismo: bendición o maldición</h3>
+						<p class="article-text">Una perspectiva controversial.</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- Reportajes Especiales -->
+			<section class="features-section">
+				<div class="section-header">
+					<h1>Reportajes Especiales</h1>
+					<p>Historias profundas que sacuden Bayamo.</p>
+				</div>
+				<div class="features-content">
+					<img
+						src="./assets/background.png"
+						class="features-img"
+						alt="Imagen de reportaje"
+					/>
+					<ul class="features-list">
+						<a href="#" class="feature-link"
+							><li>Corrupción en el ayuntamiento</li></a
+						>
+						<a href="#" class="feature-link"
+							><li>El misterio del mercado negro</li></a
+						>
+						<a href="#" class="feature-link"
+							><li>Vidas secretas de los famosos</li></a
+						>
+					</ul>
+				</div>
+			</section>
+		</div>
+
+		<script src="./js/app.js"></script>
+		<footer class="footer">
+			<div class="footer-content">
+				<div class="footer-section">
+					<div class="footer-group">
+						<h3 class="group-title">Compañía</h3>
+						<a href="#" class="group-link">Sobre Nosotros</a>
+					</div>
+					<div class="footer-group">
+						<h3 class="group-title">Legal</h3>
+						<a href="#" class="group-link">Términos de Uso</a>
+						<a href="#" class="group-link">Política de Privacidad</a>
+					</div>
+					<div class="footer-group">
+						<h3 class="group-title">Síguenos</h3>
+						<div class="social-links">
+							<img
+								src="./assets/facebook.png"
+								class="social-link"
+								alt="Facebook"
+							/>
+							<img
+								src="./assets/twitter.png"
+								class="social-link"
+								alt="Twitter"
+							/>
+							<img
+								src="./assets/instagram.png"
+								class="social-link"
+								alt="Instagram"
+							/>
+						</div>
+					</div>
+				</div>
+				<div class="footer-copyright">
+					<p>© 2025 La Baya Amarilla. Todos los derechos reservados.</p>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

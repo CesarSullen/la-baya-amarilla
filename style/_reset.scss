@@ -1,0 +1,70 @@
+// Reset
+* {
+	margin: 0;
+	padding: 0;
+	outline: none;
+	box-sizing: border-box;
+	border: none;
+	transition: all 0.3s;
+	list-style: none;
+	text-decoration: none;
+	outline: none;
+	font-family: "Poppins";
+}
+
+// Typography
+@font-face {
+	font-family: "Poppins";
+	src: url("../typography/Poppins/Poppins-Regular.ttf") format("truetype");
+	font-weight: 400;
+}
+
+// Colors
+$primary-color: #ffe45e; // Vibrant yellow as primary
+$secondary-color: #666666; // Dark gray for contrast
+$deep-shadow: 0 2px 12px rgba(0, 0, 0, 0.3); // Softer shadow for light background
+
+// Utilities
+.important-text {
+	color: $primary-color;
+}
+.bold {
+	font-weight: 600;
+}
+.italic {
+	font-style: italic;
+}
+.underline {
+	text-decoration: underline;
+}
+hr {
+	width: 100%;
+	height: 1px;
+	background-color: black;
+}
+body {
+	background-color: #f9f9f9; // Light gray background
+}
+.body-content {
+	padding: 1rem;
+	max-width: 1200px;
+	margin: auto;
+	display: grid;
+	grid-template-columns: 1fr;
+	color: black;
+	gap: 50px;
+}
+.article {
+	/* box-shadow: $deep-shadow; */
+	padding: 1rem;
+	background: $primary-color;
+	border-radius: 15px;
+	border: solid 2px black;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 10px;
+}
+a {
+	color: $secondary-color;
+}
