@@ -18,11 +18,17 @@
 	src: url("../typography/Poppins/Poppins-Regular.ttf") format("truetype");
 	font-weight: 400;
 }
+@font-face {
+	font-family: "DMSerifText";
+	src: url("../typography/DM_Serif_Text/DMSerifText-Regular.ttf")
+		format("truetype");
+	font-weight: 400;
+}
 
 // Colors
-$primary-color: #ffe45e; // Vibrant yellow as primary
-$secondary-color: #666666; // Dark gray for contrast
-$deep-shadow: 0 2px 12px rgba(0, 0, 0, 0.3); // Softer shadow for light background
+$primary-color: #ffe45e;
+$secondary-color: #666666;
+$deep-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
 
 // Utilities
 .important-text {
@@ -43,7 +49,7 @@ hr {
 	background-color: black;
 }
 body {
-	background-color: #f9f9f9; // Light gray background
+	background-color: #f9f9f9;
 }
 .body-content {
 	padding: 1rem;
@@ -54,8 +60,7 @@ body {
 	color: black;
 	gap: 50px;
 }
-.article {
-	/* box-shadow: $deep-shadow; */
+.article-card {
 	padding: 1rem;
 	background: $primary-color;
 	border-radius: 15px;
