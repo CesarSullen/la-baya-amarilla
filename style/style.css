@@ -73,10 +73,14 @@ a {
 }
 
 .article-title {
-  text-align: center;
   margin-bottom: 20px;
   font-family: "DMSerifText";
-  font-size: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .article-title {
+    font-size: 2rem;
+    text-align: center;
+  }
 }
 
 .article-img {
@@ -85,6 +89,7 @@ a {
   float: left;
   margin-bottom: 20px;
   border-radius: 15px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
 }
 @media screen and (min-width: 768px) {
   .article-img {

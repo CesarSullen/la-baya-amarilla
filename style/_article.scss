@@ -1,8 +1,10 @@
 .article-title {
-	text-align: center;
 	margin-bottom: 20px;
 	font-family: "DMSerifText";
-	font-size: 2rem;
+	@media screen and (min-width: 768px) {
+		font-size: 2rem;
+		text-align: center;
+	}
 }
 .article-img {
 	width: 100%;
@@ -10,6 +12,7 @@
 	float: left;
 	margin-bottom: 20px;
 	border-radius: 15px;
+	box-shadow: $deep-shadow;
 	@media screen and (min-width: 768px) {
 		margin-right: 30px;
 	}
