@@ -14,10 +14,10 @@
 
 	<body>
 		<nav class="nav">
-			<div class="nav-icon-wrapper">
+			<a href="./index.html" class="nav-icon-wrapper">
 				<img src="./assets/logo.png" class="nav-icon" />
 				<h1 class="nav-title">La Baya Amarilla</h1>
-			</div>
+			</a>
 			<button id="toggleBtn" class="toggle-btn">
 				<span class="bar"></span>
 				<span class="bar"></span>
@@ -31,10 +31,10 @@
 					<a href="#articles" class="nav-link"><p>Noticias</p></a>
 				</li>
 				<li>
-					<a href="#deportes" class="nav-link"><p>Deportes</p></a>
+					<a href="#economia" class="nav-link"><p>Economía</p></a>
 				</li>
 				<li>
-					<a href="#entretenimiento" class="nav-link"><p>Entretenimiento</p></a>
+					<a href="#social" class="nav-link"><p>Social</p></a>
 				</li>
 				<li>
 					<a href="#opinion" class="nav-link"><p>Opinión</p></a>
@@ -48,12 +48,10 @@
 					<a href="#articles" class="sidebar-link"><p>Noticias</p></a>
 				</li>
 				<li>
-					<a href="#deportes" class="sidebar-link"><p>Deportes</p></a>
+					<a href="#economia" class="sidebar-link"><p>Economía</p></a>
 				</li>
 				<li>
-					<a href="#entretenimiento" class="sidebar-link"
-						><p>Entretenimiento</p></a
-					>
+					<a href="#social" class="sidebar-link"><p>Social</p></a>
 				</li>
 				<li>
 					<a href="#opinion" class="sidebar-link"><p>Opinión</p></a>
@@ -62,7 +60,7 @@
 		</nav>
 
 		<div class="body-content">
-			<!-- Headline -->
+			<!-- Headline (dejamos estática por simplicidad, pero podría ser dinámica también) -->
 			<section class="headline" id="inicio">
 				<div class="headline-title">
 					<h1>¡Bayamo en llamas!</h1>
@@ -84,133 +82,25 @@
 						Bayamo.
 					</p>
 				</div>
-				<div class="articles">
-					<a
-						href="./views/article.html?slug=tomates-criptomoneda-comestible"
-						class="article-card"
-					>
-						<img
-							src="./assets/news-images/tomates-criptomoneda-comestible.jpg"
-							alt="Tomates: La criptomoneda comestible"
-							class="article-card-img"
-						/>
-						<h3 class="article-card-title">
-							Tomates: La criptomoneda comestible
-						</h3>
-						<p class="article-card-text">
-							En Bayamo, los tomates han pasado de ser un humilde acompañante a
-							un artículo de lujo...
-						</p>
-					</a>
-					<a
-						href="./article.html?slug=famosa-cantante-local-involucrada-en-escandalo"
-						class="article-card"
-					>
-						<img
-							src="./assets/coming-soon.jpg"
-							alt="Próximamente"
-							class="article-card-img"
-						/>
-						<h3 class="article-card-title">
-							Famosa cantante local involucrada en escándalo
-						</h3>
-						<p class="article-card-text">
-							Las fotos que están dando de qué hablar...
-						</p>
-					</a>
-					<a
-						href="./article.html?slug=misterioso-avistamiento-en-el-rio-bayamo"
-						class="article-card"
-					>
-						<img
-							src="./assets/coming-soon.jpg"
-							alt="Próximamente"
-							class="article-card-img"
-						/>
-						<h3 class="article-card-title">
-							Misterioso avistamiento en el río Bayamo
-						</h3>
-						<p class="article-card-text">
-							¿Criatura desconocida o broma elaborada?
-						</p>
-					</a>
-				</div>
+				<div class="articles" id="latest-articles"></div>
 			</section>
 
-			<!-- Deportes -->
-			<section class="section" id="deportes">
+			<!-- Economía -->
+			<section class="section" id="economia">
 				<div class="section-header">
-					<h1>Deportes</h1>
-					<p>Lo último en acción deportiva local en Bayamo.</p>
+					<h1>Economía</h1>
+					<p>Lo último sobre la economía en Bayamo.</p>
 				</div>
-				<div class="articles">
-					<a
-						href="./article.html?slug=equipo-local-arrasa-en-torneo-regional"
-						class="article-card"
-					>
-						<img
-							src="./assets/coming-soon.jpg"
-							alt="Próximamente"
-							class="article-card-img"
-						/>
-						<h3 class="article-card-title">
-							Equipo local arrasa en torneo regional
-						</h3>
-						<p class="article-card-text">Un triunfo que nadie esperaba...</p>
-					</a>
-					<a
-						href="./article.html?slug=escandalo-en-el-estadio-pelea-entre-hinchas"
-						class="article-card"
-					>
-						<img
-							src="./assets/coming-soon.jpg"
-							alt="Próximamente"
-							class="article-card-img"
-						/>
-						<h3 class="article-card-title">
-							Escándalo en el estadio: pelea entre hinchas
-						</h3>
-						<p class="article-card-text">Caos tras el partido del domingo.</p>
-					</a>
-				</div>
+				<div class="articles" id="economy-articles"></div>
 			</section>
 
-			<!-- Entretenimiento -->
-			<section class="section" id="entretenimiento">
+			<!-- Social -->
+			<section class="section" id="social">
 				<div class="section-header">
-					<h1>Entretenimiento</h1>
-					<p>Chismes y noticias de las estrellas de Bayamo.</p>
+					<h1>Social</h1>
+					<p>Noticias y eventos sociales que impactan la comunidad.</p>
 				</div>
-				<div class="articles">
-					<a
-						href="./article.html?slug=actor-local-en-nuevo-romance-secreto"
-						class="article-card"
-					>
-						<img
-							src="./assets/coming-soon.jpg"
-							alt="Próximamente"
-							class="article-card-img"
-						/>
-						<h3 class="article-card-title">
-							Actor local en nuevo romance secreto
-						</h3>
-						<p class="article-card-text">¿Quién es su misteriosa pareja?</p>
-					</a>
-					<a
-						href="./article.html?slug=concierto-termina-en-caos-total"
-						class="article-card"
-					>
-						<img
-							src="./assets/coming-soon.jpg"
-							alt="Próximamente"
-							class="article-card-img"
-						/>
-						<h3 class="article-card-title">Concierto termina en caos total</h3>
-						<p class="article-card-text">
-							Los fans enloquecieron en el escenario.
-						</p>
-					</a>
-				</div>
+				<div class="articles" id="social-articles"></div>
 			</section>
 
 			<!-- Opinión -->
@@ -219,41 +109,10 @@
 					<h1>Opinión</h1>
 					<p>Voces locales que dan de qué hablar.</p>
 				</div>
-				<div class="articles">
-					<a
-						href="./article.html?slug=bayamo-esta-perdiendo-su-esencia"
-						class="article-card"
-					>
-						<img
-							src="./assets/coming-soon.jpg"
-							alt="Próximamente"
-							class="article-card-img"
-						/>
-						<h3 class="article-card-title">
-							¿Bayamo está perdiendo su esencia?
-						</h3>
-						<p class="article-card-text">
-							Un residente opina sobre los cambios.
-						</p>
-					</a>
-					<a
-						href="./article.html?slug=el-turismo-bendicion-o-maldicion"
-						class="article-card"
-					>
-						<img
-							src="./assets/coming-soon.jpg"
-							alt="Próximamente"
-							class="article-card-img"
-						/>
-						<h3 class="article-card-title">
-							El turismo: bendición o maldición
-						</h3>
-						<p class="article-card-text">Una perspectiva controversial.</p>
-					</a>
-				</div>
+				<div class="articles" id="opinion-articles"></div>
 			</section>
 
-			<!-- Reportajes Especiales -->
+			<!-- Reportajes Especiales (dejamos como placeholder por ahora) -->
 			<section class="specials-section">
 				<div class="section-header">
 					<h1>Reportajes Especiales</h1>
@@ -261,7 +120,7 @@
 				</div>
 				<div class="specials-content">
 					<img
-						src="./assets/this-is-fine.jpg"
+						src="./assets/coming-soon.jpg"
 						class="special-card-img"
 						alt="Imagen de reportaje"
 					/>
@@ -296,21 +155,27 @@
 					<div class="footer-group">
 						<h3 class="group-title">Síguenos</h3>
 						<div class="social-links">
-							<img
-								src="./assets/facebook.png"
-								class="social-link"
-								alt="Facebook"
-							/>
-							<img
-								src="./assets/twitter.png"
-								class="social-link"
-								alt="Twitter"
-							/>
-							<img
-								src="./assets/instagram.png"
-								class="social-link"
-								alt="Instagram"
-							/>
+							<a href="https://x.com/saru_senpaii">
+								<img
+									src="./assets/social-icons/x-logo.svg"
+									class="social-link"
+									alt="X"
+								/>
+							</a>
+							<a href="https://instagram.com/@saru_senpaii">
+								<img
+									src="./assets/social-icons/instagram-logo.svg"
+									class="social-link"
+									alt="Instagram"
+								/>
+							</a>
+							<a href="https://threads.net/@saru_senpaii">
+								<img
+									src="./assets/social-icons/threads-logo.svg"
+									class="social-link"
+									alt="Threads"
+								/>
+							</a>
 						</div>
 					</div>
 				</div>
