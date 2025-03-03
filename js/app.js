@@ -28,9 +28,7 @@ function createArticleCard(article) {
 }
 
 // Cargar y mostrar artículos desde el JSON
-fetch(
-	"https://raw.githubusercontent.com/CesarSullen/la-baya-amarilla/main/js/articles.json"
-)
+fetch("./js/articles.json")
 	.then((response) => {
 		if (!response.ok) {
 			throw new Error("Error al cargar el archivo JSON");

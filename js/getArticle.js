@@ -24,9 +24,7 @@ function displayArticle(article) {
 }
 
 // Cargar el archivo JSON y buscar el artículo según el slug
-fetch(
-	"https://raw.githubusercontent.com/CesarSullen/la-baya-amarilla/main/js/articles.json"
-)
+fetch("../js/articles.json")
 	.then((response) => {
 		if (!response.ok) {
 			throw new Error("Error al cargar el archivo JSON");
