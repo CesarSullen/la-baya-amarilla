@@ -19,7 +19,7 @@ function toggleMenu() {
 // Función para crear una tarjeta de artículo
 function createArticleCard(article) {
 	return `
-        <a href="./views/article.html?slug=${article.slug}" class="article-card">
+        <a href="./article.html?slug=${article.slug}" class="article-card">
             <img src="${article.image}" alt="${article.title}" class="article-card-img" />
             <h3 class="article-card-title">${article.title}</h3>
             <p class="article-card-text">${article.description}</p>
