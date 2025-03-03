@@ -14,8 +14,6 @@ fetch("../js/articles.json")
 			document.getElementById("article-title").textContent = article.title;
 			document.getElementById("article-image").src = article.image;
 			document.getElementById("article-image").alt = article.title;
-			document.getElementById("article-description").textContent =
-				article.description;
 			document.getElementById("article-body").innerHTML = article.body.replace(
 				/\n/g,
 				"<br>"
