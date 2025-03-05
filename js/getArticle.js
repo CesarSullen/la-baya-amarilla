@@ -35,9 +35,28 @@ fetch("./js/articles.json")
 		const slug = getSlugFromURL();
 		const article = articles.find((n) => n.slug === slug);
 		displayArticle(article);
+		updatePageMetadata(article);
 	})
 	.catch((error) => {
 		console.error("Error al cargar el JSON:", error);
 		document.querySelector(".article").innerHTML =
 			"<p>Error al cargar el artículo. Intenta de nuevo más tarde.</p>";
 	});
+
+function updatePageMetadata(article) {
+	// Actualizar el título de la página
+	document.title = article.title;
+
+	// Actualizar los OG tags
+	const ogTitle = document.querySelector('meta[property="og:title"]');
+	const ogDescription = document.querySelector(
+		'meta[property="og:description"]'
+	);
+	const ogImage = document.querySelector('meta[property="og:image"]');
+
+	ogTitle.setAttribute("content", article.title);
+	ogDescription.setAttribute("content", article.description);
+	ogImage.setAttribute("content", article.image);
+
+	console.log(ogTitle, ogImage, ogDescription);
+}
